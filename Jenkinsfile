@@ -56,7 +56,7 @@ pipeline{
               last_started=env.STAGE_NAME
             }
         rtUpload(
-         serverId : 'sample-jfrog',
+         serverId : 'Jfrog-sample',
          spec :'''{
            "files" :[
            {
