@@ -29,7 +29,7 @@ pipeline{
             }
         }
         }
-   /*  stage("Build & SonarQube analysis") {
+    stage("Build & SonarQube analysis") {
             agent any
             steps {
                script{
@@ -41,7 +41,7 @@ pipeline{
                 sh 'mvn clean package sonar:sonar'
               }
             }
-          } *
+          } 
      stage("Quality gate") {
             steps {
                script{
@@ -49,7 +49,7 @@ pipeline{
             }
                 waitForQualityGate abortPipeline: true
             }
-        } */
+        } 
      stage('Deploy to artifactory'){
         steps{
            script{
